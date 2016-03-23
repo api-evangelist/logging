@@ -1,6 +1,6 @@
 ---
 layout: page
-title: API Definitions
+title: API Logging
 ---
 <p style="font-size: 12px; padding:5px;">
   <img src="{{ site.project_image }}" align="right" width="90" style="padding: 10px;" />
@@ -14,14 +14,9 @@ title: API Definitions
 
     <p><strong><span style="font-size: 20px;">&#8620;</span>&nbsp;&nbsp;Top Links</strong></p>
     <ul class="featurelist">
-      <li><a href="https://apiblueprint.org/">API Blueprint</a></li>
-      <li><a href="https://github.com/OAI/OpenAPI-Specification">The OpenAPI Specification</a></li>
-      <li><a href="http://definitions.apievangelist.com/openapi-spec/platform-integrations/">OpenAPI Spec Platform Integrations</a></li>
-      <li><a href="http://definitions.apievangelist.com/openapi-spec/external-integrations/">OpenAPI Spec External Integrations</a></li>
-      <li><a href="http://definitions.apievangelist.com/openapi-spec/interactive-documentation/">OpenAPI Spec Interactive Documentation</a></li>
-      <li><a href="http://definitions.apievangelist.com/openapi-spec/building-blocks/">OpenAPI Spec Building Blocks</a></li>
-      <li><a href="http://definitions.apievangelist.com/openapi-spec/tooling/">OpenAPI Spec Tooling</a></li>
-      <li><a href="http://definitions.apievangelist.com/openapi-spec/extensions/">OpenAPI Spec Extensions</a></li>
+      <li><a href="https://papertrailapp.com/">Papertrails</a></li>
+      <li><a href="http://loggly.com/">Loggly</a></li>
+      <li><a href="https://logentries.com/">Logentries</a></li>
     </ul>
 
   </div>
@@ -29,10 +24,23 @@ title: API Definitions
 
     <p><strong><span style="font-size: 20px;">&#8620;</span>&nbsp;&nbsp;Latest News</strong><a href="/blog.xml"><img src="https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-rss-icon.png" width="15" style="padding-left: 5px;" /></a></p>
     <ul class="newslist">
-      {% for post in site.posts limit:4 %}
-      {% if post.title != null %}
-        <li><a href="{{ post.source }}">{{ post.title }}</a></li>
-      {% endif %}
+      {% assign totalpost = 4 %}
+      {% assign amount = 0 %}
+      {% for post in site.posts limit:150 %}
+        {% if post.title != null %}
+
+            <!--Guess this is only way to do??-->
+            {% if amount == '1' %}
+              <li><a href="{{ post.source }}">{{ post.title }}</a></li>
+            {% elsif amount == '2' %}
+              <li><a href="{{ post.source }}">{{ post.title }}</a></li>
+            {% elsif amount == '3' %}
+              <li><a href="{{ post.source }}">{{ post.title }}</a></li>
+            {% endif %}
+
+            {% capture amount %}{{ amount | plus: '1' }}{% endcapture %}
+
+        {% endif %}
       {% endfor %}
     </ul>
 
