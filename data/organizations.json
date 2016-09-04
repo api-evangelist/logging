@@ -1,116 +1,20 @@
+---
+layout: none
+---
 [
-	{
-		"id": "fF60I123WdcIsihqBq4gz18LuGKeyDrDjr6VTzbhFQFW123zy1vf123jO0rbv1237mMOG6c5KgxqKEYGDtMld15LhIlEYQ117117",
-		"name": "BlackStratus",
-		"summary": "Since 1999, BlackStratus has been providing reliable and innovative security information event management (SIEM) products and services. Through our years of experience with the worldu2019s leading managed service providers (MSPs) and enterprises, were able to offer the most highly evolved security and compliance management platform in existence and unparalleled support to help MSPs develop new or ",
-		"details": "Since 1999, BlackStratus has been providing reliable and innovative security information event management (SIEM) products and services. Through our years of experience with the worldu2019s leading managed service providers (MSPs) and enterprises, were able to offer the most highly evolved security and compliance management platform in existence and unparalleled support to help MSPs develop new or improve their current cloud security-as-a-service business.",
-		"website": "http://www.blackstratus.com/",
-		"twitter": "https://twitter.com/blackstratusinc",
-		"github": "",
-		"apisjson_url": "",
-		"sdksio_url": "",
-		"postman_url": "",
-		"portal_url": "",
-		"base_url": "",
-		"blog": "http://www.blackstratus.com/blog/",
-		"blogrss": "http://www.blackstratus.com/blog/feed/",
-		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/BlackStratus-Logo.png",
-		"logo_width": "150",
-		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/BlackStratus-Logo.png",
-		"tags": [
-			"Logging",
-			"Compliance"
-		]
-	},
-	{
-		"id": "o458NohwrnrmqAhnbYTmE11yV63Eu5wImPxBqcLZ116VuA4ebyl116QR4vT6qnKdDrbPjO0R3sSDMze1goR5a6Rs2w117117",
-		"name": "Logentries",
-		"summary": "Logentries is the leading real-time log management and analytics service built for the cloud, making business insights from machine-generated log data easily accessible to development, IT and business operations teams of all sizes. With the broadest platform support and an open API, Logentries brings the value of log-level data to any system, to any team member, and to a community of more than 35,",
-		"details": "Logentries is the leading real-time log management and analytics service built for the cloud, making business insights from machine-generated log data easily accessible to development, IT and business operations teams of all sizes. With the broadest platform support and an open API, Logentries brings the value of log-level data to any system, to any team member, and to a community of more than 35,000 worldwide users.",
-		"website": "https://logentries.com/",
-		"twitter": "https://twitter.com/logentries",
-		"github": "https://github.com/logentries",
-		"apisjson_url": "",
-		"sdksio_url": "",
-		"postman_url": "",
-		"portal_url": "https://github.com/logentries",
-		"base_url": "https://logentries.com/doc/api/",
-		"blog": "https://blog.logentries.com/",
-		"blogrss": "",
-		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logentries-logo.png",
-		"logo_width": "150",
-		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logentries-logo.png",
-		"tags": [
-			"Target",
-			"Logging"
-		]
-	},
-	{
-		"id": "p7x4pbplZKcMOiruhXbsP1an116NtqsC123lnOz1oxMUWtCXMVJNRODdzoJvL9WikBHuKgak4jOyEfSAfm7l3lCYHQ117117",
-		"name": "Loggly, Inc.",
-		"summary": "Loggly is a leading provider of a Log Management in the Cloud platform for log management and data analysis.  Logglyu2019s cloud-based service enables users to monitor, debug and troubleshoot their IT infrastructure, applications and business processes. Headquartered in San Francisco, Loggly has over 2500 customers and is backed by True and Trinity Ventures, and Matrix Partners.",
-		"details": "Loggly is a leading provider of a Log Management in the Cloud platform for log management and data analysis.  Logglyu2019s cloud-based service enables users to monitor, debug and troubleshoot their IT infrastructure, applications and business processes. Headquartered in San Francisco, Loggly has over 2500 customers and is backed by True and Trinity Ventures, and Matrix Partners.",
-		"website": "http://loggly.com",
-		"twitter": "https://twitter.com/loggly",
-		"github": "https://github.com/loggly",
-		"apisjson_url": "http://theapistack.com/data/loggly-inc/apis.json",
-		"sdksio_url": "",
-		"postman_url": "",
-		"portal_url": "https://github.com/loggly",
-		"base_url": "http://wiki.loggly.com/apidocumentation",
-		"blog": "http://www.loggly.com/blog/",
-		"blogrss": "https://www.loggly.com/feed/",
-		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/611_logo.png",
-		"logo_width": "150",
-		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/611_logo.png",
-		"tags": [
-			"Target",
-			"Logging"
-		]
-	},
-	{
-		"id": "spIbkbCPK9uyjPXQnnmHvXMU66kAb3VFOLzPyfuTclAQmn116NxIPyzdx70g7wNRwcGsTpvVO6RZPDQ116H116123umPCA117117",
-		"name": "loggr.net",
-		"summary": "Loggr offers cloud-based, real-time Web Application Monitoring, which includes monitoring application events and users with ad-hoc analytics and notification system. ",
-		"details": "Loggr offers cloud-based, real-time Web Application Monitoring, which includes monitoring application events and users with ad-hoc analytics and notification system. ",
-		"website": "http://loggr.net/",
-		"twitter": "https://twitter.com/#!/loggrnet",
-		"github": "https://github.com/loggr",
-		"apisjson_url": "http://theapistack.com/data/loggrnet/apis.json",
-		"sdksio_url": "",
-		"postman_url": "",
-		"portal_url": "https://github.com/loggr",
-		"base_url": "http://docs.loggr.net/",
-		"blog": "http://blog.loggr.net",
-		"blogrss": "http://blog.loggr.net/rss",
-		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/838_logo.png",
-		"logo_width": "150",
-		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/838_logo.png",
-		"tags": [
-			"Target",
-			"Logging"
-		]
-	},
-	{
-		"id": "9hewkh6rG8y4N03yjHEt9ZZ6LfJ9u1Hbs6UsAm615hPWphRP1238zaItC2mvLGetbCiWRBRM42vHPY0TKFSjV9Ag117117",
-		"name": "Papertrail logs",
-		"summary": "All app logs, text log files, and syslog. One place. Its realtime. Use a browser, command-line, or API. Get alerted instantly. Detect trends and archive forever. Instant log visibility. Use Papertrails time-saving log tools, flexible system groups, team-wide access, long-term archives, charts and analytics exports, monitoring webhooks, and 45-second setup. Realize value from logs you already colle",
-		"details": "All app logs, text log files, and syslog. One place. Its realtime. Use a browser, command-line, or API. Get alerted instantly. Detect trends and archive forever. Instant log visibility. Use Papertrails time-saving log tools, flexible system groups, team-wide access, long-term archives, charts and analytics exports, monitoring webhooks, and 45-second setup. Realize value from logs you already collect. Track down customer problems, error messages, app requests, slow DB queries, config changes.",
-		"website": "https://papertrailapp.com/",
-		"twitter": "https://twitter.com/papertrailapp",
-		"github": "https://github.com/papertrail",
-		"apisjson_url": "",
-		"sdksio_url": "",
-		"postman_url": "",
-		"portal_url": "https://github.com/papertrail",
-		"base_url": "",
-		"blog": "http://blog.papertrailapp.com/",
-		"blogrss": "http://blog.papertrailapp.com/rss",
-		"logo": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/883_logo.jpg",
-		"logo_width": "190",
-		"screenshot": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/883_logo.jpg",
-		"tags": [
-			"Logging"
-		]
-	}
+{% for org in site.data.organizations %}{
+	"id": "{{ org.id }}",
+	"name": "{{ org.name }}",
+	"website": "{{ org.website }}",
+	"twitter": "{{ org.twitter }}",
+	"github": "{{ org.github }}",
+	"portal_url": "{{ org.portal_url }}",
+	"base_url": "{{ org.base_url }}",
+	"blog": "{{ org.blog }}",
+	"blogrss": "{{ org.blogrss }}",
+	"logo": "{{ org.logo }}",
+	"logo_width": "{{ org.logo_width }}",
+	"screenshot": "{{ org.screenshot }}",
+	"tags": {{ org.tags }}
+{% endfor %}}{% if org.last != true %},{% endif %}
 ]
