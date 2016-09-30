@@ -1,10 +1,82 @@
 [
 	{
+		"curated_id": "B0ef5XPAtKWx9azg123BMDjkY7WWcMa0BV3CU123tAud1162joSXPTNRqodoCDrOFSdu8iQIzGxWD0ELqOJbiTV021rg117117",
+		"item_date": "2016-09-23 00:00:00",
+		"title": "Learning From 60k Customer Searches About Logging in JSON",
+		"url": "https://dzone.com/articles/learning-from-60k-customer-searches-about-logging",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "w3Scfs3N7374PEoiE8u9Whi60gzJ25lxMjTXHWnPnB123LtYxzs9jHAD2ynZFlQkX1BMR3MUTZzpUCpom86QHTZA117117",
+		"item_date": "2016-09-20 00:00:00",
+		"title": "Satcom Direct SD Acquires AircraftLogs A Provider of Aviation Data Management Solutions",
+		"url": "http://airfax.com/blog/index.php/2016/09/20/satcom-direct-sd-acquires-aircraftlogs-a-provider-of-aviation-data-management-solutions/",
+		"domain": "airfax.com",
+		"image": ""
+	},
+	{
+		"curated_id": "xWUhzeO9ewOOtLQztZBS7GEeushPuMTz2XZWaLbAO4kY56fKmaDKZhrHTCd123wMgBgXm116VLxsZCvOzbPx6116Sq7w117117",
+		"item_date": "2016-09-18 00:00:00",
+		"title": "Audit and Log Database DML Changes in PostgreSQL With Cyan Audit",
+		"url": "https://dzone.com/articles/audit-log-database-changes-in-postgresql",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "M7kmBG9XPHG68gOjqpT7lA8OrKEHROQakqnDkSNwQzT6X8D78MsVBS2PqqRSmbe8639nXvx116Wvf07Ak7LTXgow117117",
+		"item_date": "2016-09-14 00:00:00",
+		"title": "5 Logstash Alternatives",
+		"url": "https://dzone.com/articles/5-logstash-alternatives-2",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
+		"curated_id": "hLOCZdccQ5muRd885J86EF6q28RhMusQWoPy4dqWToTH3ByyO50Am123K9IrVI3mxO6PKs9110EGtC45B8SWNnPw117117",
+		"item_date": "2016-09-07 08:01:26",
+		"title": "Tweet Log Search SimplifiednbsphttpstcoMSQJyBSrMh Rapid7 logentries",
+		"url": "https://twitter.com/logentries/statuses/773536660390805504",
+		"domain": "twitter.com",
+		"image": ""
+	},
+	{
+		"curated_id": "opJ123Y0116B2CCHy5D116TclCOrbvyB701Rm0b116LlI8zjWmaWqZfCm4JP116t984p4pSxMo7faKrhbcvlpXRCYZP8bQrQ117117",
+		"item_date": "2016-09-08 05:00:13",
+		"title": "Tweet Get your work done even faster with the Logentries REST API httpstcobhWNlwKHH3 api restapi httpstcotAgJ50kuZ2",
+		"url": "https://twitter.com/logentries/statuses/773853446508310528",
+		"domain": "twitter.com",
+		"image": ""
+	},
+	{
+		"curated_id": "nOEOxquxvdWdTohH1hghU6TyxyrDjdjYJAglVpTQCFqGnKaLf1SyxxEsvvC7FKT0WjuemMs4Bk52kRmUe9AmLA117117",
+		"item_date": "2016-09-07 00:00:00",
+		"title": "Using the HTTP OMS Data Collector API for realworld scenariosPart 2",
+		"url": "https://blogs.technet.microsoft.com/stefan_stranger/2016/09/07/using-the-http-oms-data-collector-api-for-real-world-scenarios-part-2/",
+		"domain": "blogs.technet.microsoft.com",
+		"image": ""
+	},
+	{
+		"curated_id": "sGFAz0dRJuvU2VqJXx5uwYyWX1nRROYnKtvN81pJ3d4F54z1r6nnliOKoYeg4u123m6VAz5LA24kIRdm3D4MktgA117117",
+		"item_date": "2016-09-06 00:00:00",
+		"title": "Updated Products  Adafruit Assembled Data Logging shield for Arduino  Light and temperature datalogger pack",
+		"url": "https://blog.adafruit.com/2016/09/06/updated-products-adafruit-assembled-data-logging-shield-for-arduino-light-and-temperature-data-logger-pack/",
+		"domain": "blog.adafruit.com",
+		"image": ""
+	},
+	{
 		"curated_id": "EWFINr5wqdCBBjk0ofhNzEO9zuGdgqV123ChFkagOjD0760IhGq4ldc8cmmkmUY9nTWo487UhTORGQLxth5xMNsg117117",
 		"item_date": "2016-09-02 00:00:00",
 		"title": "Audit Trail Dashboard with CloudBees Jenkins Analytics",
-		"url": "https://dzone.com/articles/audit-trail-dashboard-with-cloudbees-jenkins-analy-1?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+dzone",
-		"domain": "dzone.com",
+		"url": "https://www.cloudbees.com/blog/audit-trail-dashboard-cloudbees-jenkins-analytics",
+		"domain": "www.cloudbees.com",
+		"image": ""
+	},
+	{
+		"curated_id": "Mxnt5qxQCWjxOsE6dmBH4DjSyCYtBC1NcLdBiG84Mzh97qZBNuBiouiv7uhPQl1kOzRBEpKLAnmTFTH47PUU123w117117",
+		"item_date": "2016-08-30 00:00:00",
+		"title": "Stackdriver Debugger now displays application logs to better troubleshoot apps",
+		"url": "https://cloudplatform.googleblog.com/2016/08/Stackdriver-Debugger-now-displays-application-logs-to-better-troubleshoot-apps.html",
+		"domain": "cloudplatform.googleblog.com",
 		"image": ""
 	},
 	{
