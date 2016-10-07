@@ -1,5 +1,13 @@
 [
 	{
+		"curated_id": "M3kCbgcWc8NDuQyu71231232a7zX5jyVQAlGJk3rLlZ2YiTTmt3vDLvHYN3x2Eu116X3THxxy5oGoqt10UUa7XR123ACnA117117",
+		"item_date": "2016-10-04 00:00:00",
+		"title": "AWS Logstash Setup",
+		"url": "https://ctovision.com/aws-logstash-setup/",
+		"domain": "ctovision.com",
+		"image": ""
+	},
+	{
 		"curated_id": "123JeiS5ZSzisoTG6uqz7yFuIxGQQiBKW123gY0tOPo2ur3pkpNwb116zUCgeevbuE2PGKxq9i0QmqcW0osjVDWxKF1Q117117",
 		"item_date": "2016-10-02 00:00:00",
 		"title": "Logger for Log4Net",
