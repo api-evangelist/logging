@@ -1,5 +1,13 @@
 [
 	{
+		"curated_id": "b4AD3xtW7aDl9u5Xh9zVYBNVJFhzTkIAXdWASYDhhgpvzEOnc1xNJ2Fkt49x4Ru1IoEYFUVPxTKd79V1DxgDAw117117",
+		"item_date": "2016-11-07 00:00:00",
+		"title": "CloudWatch Update  Jump From Metrics to Associated Logs",
+		"url": "https://aws.amazon.com/blogs/aws/cloudwatch-update-jump-from-metrics-to-associated-logs/",
+		"domain": "aws.amazon.com",
+		"image": ""
+	},
+	{
 		"curated_id": "tpe4O4EKz123db1Rb94x79tcAXEpE123j116acxcoNhixzLnlfVR9jjW3AltetG9SE7GkFqML9vW07uOu4116FwvktrGLw117117",
 		"item_date": "2016-11-03 00:00:00",
 		"title": "Keeping Your Code Clean While Logging",
