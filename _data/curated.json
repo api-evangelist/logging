@@ -8,11 +8,27 @@
 		"image": ""
 	},
 	{
+		"curated_id": "7CPkaE2Gxjvca6lvz1UmiyDNxXC8iG4O116tYvMqFY3M8ec9X94mrbrMbJhdzfKlA9p0Qt6rSASEikaiNE4HMQFg117117",
+		"item_date": "2017-01-17 00:00:00",
+		"title": "Logging A Docker Environment With Portainer Or Not",
+		"url": "https://dzone.com/articles/logging-a-docker-environment-with-portainer-or-not",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
 		"curated_id": "qQjrkXPahpaOmjxFOVIU0116OwU4h1nCVWx60p9NYBL8bHRMxktfP89HMA7JGD0y8R0Fm5xFPSLX8VewNl4H7fZA117117",
 		"item_date": "2017-01-19 00:00:00",
 		"title": "Google intros Audit Logging tool for its cloud services",
 		"url": "http://siliconangle.com/blog/2017/01/19/google-intros-audit-logging-tool-cloud-services/",
 		"domain": "siliconangle.com",
+		"image": ""
+	},
+	{
+		"curated_id": "uBRnW3YkBuzofDmw12355Nba8Mp6aZrVz3YN7oCNeDk1VPa6Afz123dC4uecOvPWRTYnEVjqpjrjnaUrRjclzMApKA117117",
+		"item_date": "2017-01-18 00:00:00",
+		"title": "Google Cloud Audit Logging now available across the GCP stack",
+		"url": "https://cloudplatform.googleblog.com/2017/01/Google-Cloud-Audit-Logging-now-available-across-the-GCP-stack.html",
+		"domain": "cloudplatform.googleblog.com",
 		"image": ""
 	},
 	{
