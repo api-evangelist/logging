@@ -1,5 +1,13 @@
 [
 	{
+		"curated_id": "4n116To19Y4ZbmM6eg4M123zYWmgwfFASZztETiP2Q7d7AEkQ63EE34RnY116RMbt2TgT7tb2ynoBXNNIKqkpRrI2yyA117117",
+		"item_date": "2017-02-24 00:00:00",
+		"title": "Why Logs arent Enough for Security",
+		"url": "https://dzone.com/articles/why-logs-arent-enough-fornbspsecurity?utm_medium=feed&utm_source=feedpress.me&utm_campaign=Feed%3A+dzone",
+		"domain": "dzone.com",
+		"image": ""
+	},
+	{
 		"curated_id": "UckvGfAByuPxvjwN5Xz3St9w01Y4EBUlaC116Rv9jYHgf2ENCcC0M4I123Vb5sYj116NlTMQXKwGykhR9czF4LlqRhHw117117",
 		"item_date": "2017-02-16 00:00:00",
 		"title": "How to Ship Kibana Server Logs to Elasticsearch",
