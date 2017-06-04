@@ -1,0 +1,15 @@
+- slug: nagioscore
+  name: Nagios Core
+  description: >-
+    Nagios is a host/service/network monitoring program written in C and
+    released under the GNU General Public License, version 2. CGI programs are
+    included to allow you to view the current status, history, etc via a web
+    interface if you so desire.
+  url: 'https://github.com/NagiosEnterprises/nagioscore'
+  short_url: ''
+  twitter: ''
+  blog: ''
+  blog_rss: ''
+  github: 'https://github.com/NagiosEnterprises/'
+  image: 'https://s3.amazonaws.com/kinlane-productions/bw-icons/bw-github.png'
+  tags: 'Logging,Monitoring'
