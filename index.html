@@ -130,11 +130,9 @@ title: API Evangelist - Logging
 				</div>
 			</article>
     {% endfor %}
-		<center>
-			<ul class="actions" style="text-align: center;">
-				<li><a href="/organizations/" class="button big">See All Organizations</a></li>
-			</ul>
-		</center>
+		<ul class="actions" style="text-align: center;">
+			<li><a href="/organizations/" class="button big">See All Organizations</a></li>
+		</ul>
 		<p>{{ organization_content.footer }}</p>
 	</div>
 </section>
@@ -156,7 +154,7 @@ title: API Evangelist - Logging
 			{% assign tagArray = tags | split: "," %}
 			{% for tag in tagArray %}
 				{% assign tag = tag | strip %}
-				{% if approved_tags contains tag and tag != site.tag %}
+				{% if approved_tags contains tag %}
 					{% if tagslist contains tag %}
 					{% else %}
 						{% if tagslist != '' %}
