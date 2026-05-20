@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/logging/refs/heads/main/json-structure/logging-log-stream-structure.json",
+  "name": "LogStream",
+  "description": "Represents a logical log stream, dataset, index, or log group within a logging platform that organizes ingested log events.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Stable identifier for the log stream within the logging platform.",
+      "example": "prod-checkout-api"
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name of the log stream, dataset, or index.",
+      "example": "prod.checkout-api"
+    },
+    "description": {
+      "type": "string",
+      "description": "Description of what this log stream contains and who owns it.",
+      "example": "Stdout and stderr logs from the checkout-api service in production."
+    },
+    "platform": {
+      "type": "string",
+      "description": "Logging platform that hosts the stream.",
+      "enum": [
+        "splunk",
+        "sumo-logic",
+        "datadog",
+        "coralogix",
+        "axiom",
+        "openobserve",
+        "graylog",
+        "elasticsearch",
+        "opensearch",
+        "loki",
+        "grafana",
+        "cribl",
+        "vector",
+        "fluentd",
+        "fluent-bit",
+        "logstash",
+        "aws-cloudwatch",
+        "google-cloud-logging",
+        "azure-log-analytics",
+        "better-stack",
+        "opentelemetry",
+        "honeycomb",
+        "new-relic",
+        "dynatrace",
+        "chronosphere",
+        "signoz",
+        "solarwinds",
+        "qradar",
+        "other"
+      ],
+      "example": "loki"
+    },
+    "ingestion_endpoint": {
+      "type": "uri",
+      "description": "Endpoint URL used to ingest log events into this stream.",
+      "example": "https://logs.example.com/loki/api/v1/push"
+    },
+    "format": {
+      "type": "string",
+      "description": "Wire format expected by the ingestion endpoint.",
+      "enum": [
+        "json",
+        "syslog",
+        "otlp",
+        "logfmt",
+        "raw",
+        "ndjson",
+        "protobuf"
+      ],
+      "example": "otlp"
+    },
+    "retention": {
+      "type": "object",
+      "description": "Retention configuration applied to this log stream.",
+      "properties": {
+        "hot_days": {
+          "type": "integer",
+          "description": "Number of days events remain in the hot (searchable) tier.",
+          "example": 30
+        },
+        "cold_days": {
+          "type": "integer",
+          "description": "Number of additional days events remain in cold or archive storage.",
+          "example": 365
+        },
+        "archive_url": {
+          "type": "uri",
+          "description": "Archive destination for raw log data after the hot window expires.",
+          "example": "s3://example-log-archive/checkout-api/"
+        }
+      }
+    },
+    "labels": {
+      "type": "object",
+      "description": "Indexed labels or tags attached to all events in the stream.",
+      "example": {
+        "service": "checkout-api",
+        "env": "production",
+        "team": "payments"
+      }
+    },
+    "estimated_volume_gb_per_day": {
+      "type": "number",
+      "description": "Estimated daily ingestion volume in gigabytes.",
+      "example": 124.5
+    },
+    "status": {
+      "type": "string",
+      "description": "Operational status of the log stream.",
+      "enum": [
+        "active",
+        "paused",
+        "draining",
+        "deprecated"
+      ],
+      "example": "active"
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "platform",
+    "format"
+  ]
+}

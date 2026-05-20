@@ -1,0 +1,109 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "log": "https://api-evangelist.github.io/logging/schema/",
+    "schema": "https://schema.org/",
+    "dcterms": "http://purl.org/dc/terms/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcat": "https://www.w3.org/ns/dcat#",
+    "otel": "https://opentelemetry.io/schemas/",
+
+    "LogEvent": "log:LogEvent",
+    "LogStream": "log:LogStream",
+
+    "name": "schema:name",
+    "description": "schema:description",
+    "timestamp": {
+      "@id": "log:timestamp",
+      "@type": "xsd:dateTime"
+    },
+    "observed_timestamp": {
+      "@id": "log:observedTimestamp",
+      "@type": "xsd:dateTime"
+    },
+    "severity": {
+      "@id": "log:severity",
+      "@type": "xsd:string"
+    },
+    "severity_number": {
+      "@id": "otel:SeverityNumber",
+      "@type": "xsd:integer"
+    },
+    "body": {
+      "@id": "log:body",
+      "@type": "xsd:string"
+    },
+    "service": {
+      "@id": "log:service",
+      "@type": "xsd:string"
+    },
+    "host": {
+      "@id": "log:host",
+      "@type": "xsd:string"
+    },
+    "environment": {
+      "@id": "log:environment",
+      "@type": "xsd:string"
+    },
+    "trace_id": {
+      "@id": "otel:traceId",
+      "@type": "xsd:string"
+    },
+    "span_id": {
+      "@id": "otel:spanId",
+      "@type": "xsd:string"
+    },
+    "attributes": {
+      "@id": "log:attributes",
+      "@container": "@index"
+    },
+    "source": {
+      "@id": "log:source",
+      "@type": "@id"
+    },
+    "stream": {
+      "@id": "log:stream",
+      "@type": "xsd:string"
+    },
+    "platform": {
+      "@id": "log:platform",
+      "@type": "xsd:string"
+    },
+    "ingestion_endpoint": {
+      "@id": "dcat:accessURL",
+      "@type": "@id"
+    },
+    "format": {
+      "@id": "log:format",
+      "@type": "xsd:string"
+    },
+    "retention": {
+      "@id": "log:retention",
+      "@type": "@id"
+    },
+    "hot_days": {
+      "@id": "log:hotDays",
+      "@type": "xsd:integer"
+    },
+    "cold_days": {
+      "@id": "log:coldDays",
+      "@type": "xsd:integer"
+    },
+    "archive_url": {
+      "@id": "log:archiveUrl",
+      "@type": "@id"
+    },
+    "labels": {
+      "@id": "log:labels",
+      "@container": "@index"
+    },
+    "estimated_volume_gb_per_day": {
+      "@id": "log:estimatedVolumeGbPerDay",
+      "@type": "xsd:decimal"
+    },
+    "status": {
+      "@id": "log:status",
+      "@type": "xsd:string"
+    }
+  }
+}

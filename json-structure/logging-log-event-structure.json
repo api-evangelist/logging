@@ -1,0 +1,116 @@
+{
+  "$schema": "https://json-structure.org/meta/core/v0/#",
+  "$id": "https://raw.githubusercontent.com/api-evangelist/logging/refs/heads/main/json-structure/logging-log-event-structure.json",
+  "name": "LogEvent",
+  "description": "Represents a single log event produced by an application, service, host, or device and ingested by a logging platform.",
+  "type": "object",
+  "properties": {
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp marking when the log event occurred at the source.",
+      "example": "2026-05-19T14:32:11.482Z"
+    },
+    "observed_timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp marking when the log event was observed by the collection pipeline.",
+      "example": "2026-05-19T14:32:11.640Z"
+    },
+    "severity": {
+      "type": "string",
+      "description": "Severity level of the log event.",
+      "enum": [
+        "trace",
+        "debug",
+        "info",
+        "notice",
+        "warn",
+        "error",
+        "critical",
+        "alert",
+        "emergency"
+      ],
+      "example": "error"
+    },
+    "severity_number": {
+      "type": "integer",
+      "description": "Numeric severity following the OpenTelemetry severity scale (1-24).",
+      "example": 17
+    },
+    "body": {
+      "type": "string",
+      "description": "Raw or rendered message body of the log event.",
+      "example": "Order checkout failed: payment provider returned HTTP 502"
+    },
+    "service": {
+      "type": "string",
+      "description": "Logical service or application that produced the log event.",
+      "example": "checkout-api"
+    },
+    "host": {
+      "type": "string",
+      "description": "Host, container, or instance identifier that produced the log event.",
+      "example": "checkout-api-7f8b9c-rk2pq"
+    },
+    "environment": {
+      "type": "string",
+      "description": "Deployment environment that produced the log event.",
+      "example": "production"
+    },
+    "trace_id": {
+      "type": "string",
+      "description": "Distributed trace identifier correlating this log event to a trace.",
+      "example": "4bf92f3577b34da6a3ce929d0e0e4736"
+    },
+    "span_id": {
+      "type": "string",
+      "description": "Span identifier within the trace correlated to this log event.",
+      "example": "00f067aa0ba902b7"
+    },
+    "attributes": {
+      "type": "object",
+      "description": "Structured key/value attributes attached to the log event.",
+      "example": {
+        "http.status_code": 502,
+        "user.id": "u_18293",
+        "region": "us-east-1"
+      }
+    },
+    "source": {
+      "type": "object",
+      "description": "Origin of the log event in the collection pipeline.",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "application",
+            "container",
+            "host",
+            "syslog",
+            "cloud",
+            "network",
+            "security",
+            "audit"
+          ],
+          "example": "container"
+        },
+        "name": {
+          "type": "string",
+          "example": "kubernetes"
+        }
+      }
+    },
+    "stream": {
+      "type": "string",
+      "description": "Logical log stream, index, dataset, or table the event belongs to.",
+      "example": "prod.checkout-api.stdout"
+    }
+  },
+  "required": [
+    "timestamp",
+    "severity",
+    "body",
+    "service"
+  ]
+}

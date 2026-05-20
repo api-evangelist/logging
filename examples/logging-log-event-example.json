@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-05-19T14:32:11.482Z",
+  "observed_timestamp": "2026-05-19T14:32:11.640Z",
+  "severity": "error",
+  "severity_number": 17,
+  "body": "Order checkout failed: payment provider returned HTTP 502",
+  "service": "checkout-api",
+  "host": "checkout-api-7f8b9c-rk2pq",
+  "environment": "production",
+  "trace_id": "4bf92f3577b34da6a3ce929d0e0e4736",
+  "span_id": "00f067aa0ba902b7",
+  "attributes": {
+    "http.status_code": 502,
+    "http.method": "POST",
+    "http.route": "/v1/orders/{order_id}/checkout",
+    "user.id": "u_18293",
+    "region": "us-east-1",
+    "payment.provider": "stripe"
+  },
+  "source": {
+    "type": "container",
+    "name": "kubernetes"
+  },
+  "stream": "prod.checkout-api.stdout"
+}

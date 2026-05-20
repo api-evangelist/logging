@@ -1,0 +1,21 @@
+{
+  "id": "prod-checkout-api",
+  "name": "prod.checkout-api",
+  "description": "Stdout and stderr logs from the checkout-api service in production, shipped via Fluent Bit into Loki.",
+  "platform": "loki",
+  "ingestion_endpoint": "https://logs.example.com/loki/api/v1/push",
+  "format": "otlp",
+  "retention": {
+    "hot_days": 30,
+    "cold_days": 365,
+    "archive_url": "s3://example-log-archive/checkout-api/"
+  },
+  "labels": {
+    "service": "checkout-api",
+    "env": "production",
+    "team": "payments",
+    "region": "us-east-1"
+  },
+  "estimated_volume_gb_per_day": 124.5,
+  "status": "active"
+}

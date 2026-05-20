@@ -1,0 +1,342 @@
+vocabulary: "1.0.0"
+
+info:
+  provider: Logging
+  description: Vocabulary for the logging topic, covering log ingestion, search, aggregation, and pipeline platforms used to collect, parse, route, store, and query log events.
+  created: '2026-05-19'
+  modified: '2026-05-19'
+
+operational:
+  apis:
+    - name: Splunk
+      namespace: splunk
+      status: active
+    - name: Sumo Logic
+      namespace: sumo-logic
+      status: active
+    - name: Datadog
+      namespace: datadog
+      status: active
+    - name: Elasticsearch
+      namespace: elasticsearch
+      status: active
+    - name: OpenSearch
+      namespace: opensearch
+      status: active
+    - name: Loki
+      namespace: loki
+      status: active
+    - name: Graylog
+      namespace: graylog
+      status: active
+    - name: OpenObserve
+      namespace: openobserve
+      status: active
+    - name: Axiom
+      namespace: axiom
+      status: active
+    - name: Coralogix
+      namespace: coralogix
+      status: active
+    - name: Cribl
+      namespace: cribl
+      status: active
+    - name: Vector
+      namespace: vector
+      status: active
+    - name: Fluentd
+      namespace: fluentd
+      status: active
+    - name: Fluent Bit
+      namespace: fluent-bit
+      status: active
+    - name: Logstash
+      namespace: logstash
+      status: active
+    - name: Amazon CloudWatch
+      namespace: aws-cloudwatch
+      status: active
+    - name: Google Cloud Logging
+      namespace: google-cloud-logging
+      status: active
+    - name: Azure Log Analytics
+      namespace: azure-log-analytics
+      status: active
+    - name: Better Stack
+      namespace: betterstack
+      status: active
+    - name: OpenTelemetry
+      namespace: opentelemetry
+      status: active
+
+  resources:
+    - name: log-events
+      description: Individual log records ingested into a logging platform
+      actions:
+        - ingest
+        - search
+        - get
+        - tail
+    - name: log-streams
+      description: Logical log streams, datasets, indexes, or log groups that organize ingested events
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+    - name: parsers
+      description: Parser, grok, and processing rules that turn raw log lines into structured fields
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+    - name: pipelines
+      description: Log routing and transformation pipelines that move events between sources and destinations
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+    - name: retention-policies
+      description: Hot, warm, and cold retention rules applied to streams and indexes
+      actions:
+        - list
+        - get
+        - update
+    - name: saved-searches
+      description: Saved queries and detections that run on demand or on a schedule against log streams
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+        - run
+    - name: alerts
+      description: Alert rules fired on log patterns, thresholds, or anomalies
+      actions:
+        - list
+        - get
+        - create
+        - update
+        - delete
+
+  actions:
+    - name: ingest
+      description: Push log events into a logging platform
+      httpMethod: POST
+      pattern: write
+    - name: search
+      description: Query log events by keyword, field, label, and time range
+      httpMethod: GET
+      pattern: query
+    - name: tail
+      description: Stream live log events in near real time
+      httpMethod: GET
+      pattern: stream
+    - name: list
+      description: Enumerate resources
+      httpMethod: GET
+      pattern: read
+    - name: get
+      description: Retrieve a single resource
+      httpMethod: GET
+      pattern: read
+    - name: create
+      description: Create a new resource
+      httpMethod: POST
+      pattern: write
+    - name: update
+      description: Update an existing resource
+      httpMethod: PUT
+      pattern: write
+    - name: delete
+      description: Remove a resource
+      httpMethod: DELETE
+      pattern: destructive
+    - name: run
+      description: Execute a saved search or detection on demand
+      httpMethod: POST
+      pattern: query
+
+  schemas:
+    core:
+      - name: LogEvent
+        description: A single log event ingested by a logging platform
+        properties:
+          - timestamp
+          - severity
+          - body
+          - service
+          - host
+          - environment
+          - trace_id
+          - span_id
+          - attributes
+          - source
+          - stream
+      - name: LogStream
+        description: A logical log stream, dataset, index, or log group
+        properties:
+          - id
+          - name
+          - platform
+          - format
+          - ingestion_endpoint
+          - retention
+          - labels
+          - estimated_volume_gb_per_day
+          - status
+
+  enums:
+    severities:
+      - trace
+      - debug
+      - info
+      - notice
+      - warn
+      - error
+      - critical
+      - alert
+      - emergency
+    formats:
+      - json
+      - syslog
+      - otlp
+      - logfmt
+      - raw
+      - ndjson
+      - protobuf
+    source_types:
+      - application
+      - container
+      - host
+      - syslog
+      - cloud
+      - network
+      - security
+      - audit
+    retention_tiers:
+      - hot
+      - warm
+      - cold
+      - archive
+
+capability:
+  workflows:
+    - name: Centralized Log Aggregation
+      description: Collect logs from applications, containers, hosts, and cloud services into a single searchable platform
+      apis:
+        - splunk
+        - sumo-logic
+        - datadog
+        - elasticsearch
+        - loki
+      personas:
+        - Platform Engineer
+        - SRE
+      domains:
+        - Log Aggregation
+    - name: Log Pipeline Optimization
+      description: Use observability pipelines to filter, sample, route, and reshape log streams before they reach expensive indexing back-ends
+      apis:
+        - cribl
+        - vector
+        - fluentd
+        - fluent-bit
+        - logstash
+      personas:
+        - Platform Engineer
+      domains:
+        - Log Pipeline
+    - name: Security Log Investigation
+      description: Search, correlate, and detect on security and audit logs to drive investigations and threat hunting
+      apis:
+        - splunk
+        - sumo-logic
+        - graylog
+      personas:
+        - Security Analyst
+      domains:
+        - Log Search
+    - name: Application Troubleshooting
+      description: Search and tail application logs, correlated with traces, to diagnose production issues
+      apis:
+        - datadog
+        - axiom
+        - openobserve
+        - signoz
+      personas:
+        - SRE
+        - Application Developer
+      domains:
+        - Log Search
+
+  personas:
+    - id: platform-engineer
+      name: Platform Engineer
+      description: Engineers operating logging infrastructure, pipelines, and retention policies on behalf of other teams
+      workflows:
+        - Centralized Log Aggregation
+        - Log Pipeline Optimization
+    - id: sre
+      name: SRE
+      description: Site reliability engineers using logs to operate, troubleshoot, and improve production systems
+      workflows:
+        - Centralized Log Aggregation
+        - Application Troubleshooting
+    - id: security-analyst
+      name: Security Analyst
+      description: Security engineers and analysts using log search and detection content for SIEM use cases
+      workflows:
+        - Security Log Investigation
+    - id: application-developer
+      name: Application Developer
+      description: Developers emitting structured logs from their applications and using them for debugging
+      workflows:
+        - Application Troubleshooting
+
+  domains:
+    - name: Log Aggregation
+      description: Collecting logs from many sources into centralized stores for unified search and analytics
+    - name: Log Search
+      description: Indexing and querying log content for troubleshooting, security, and analytics
+    - name: Log Pipeline
+      description: Routing, transforming, sampling, and reshaping log streams between sources and destinations
+    - name: Log Retention
+      description: Managing hot, warm, cold, and archive retention for logs across cost and compliance requirements
+
+crossReference:
+  - resource: log-events
+    operations:
+      - ingest
+      - search
+      - tail
+    workflows:
+      - Centralized Log Aggregation
+      - Application Troubleshooting
+    personas:
+      - SRE
+      - Application Developer
+  - resource: pipelines
+    operations:
+      - create
+      - update
+      - list
+    workflows:
+      - Log Pipeline Optimization
+    personas:
+      - Platform Engineer
+  - resource: saved-searches
+    operations:
+      - create
+      - run
+      - list
+    workflows:
+      - Security Log Investigation
+    personas:
+      - Security Analyst
