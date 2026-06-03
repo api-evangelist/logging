@@ -1,0 +1,198 @@
+meta:
+  name: Logging
+  description: An index and topic collection covering log ingestion, log search, log
+    aggregation, and log pipeline services. Logging platforms collect event records
+    from applications, infrastructure, containers, network devices, and security tooling,
+    then parse, index, route, and retain them for search, alerting, troubleshooting,
+    audit, and analytics. This collection spans hosted SaaS log platforms (Splunk,
+    Sumo Logic, Datadog Logs, Coralogix, Axiom, Logz.io, Better Stack Logs), open-source
+    log stacks (Elasticsearch / OpenSearch, Loki, Graylog, OpenObserve, SigNoz), log
+    pipeline and shipper tooling (Fluentd, Fluent Bit, Logstash, Vector, Cribl), and
+    cloud-native log services (AWS CloudWatch Logs, Google Cloud Logging, Azure Log
+    Analytics, OpenTelemetry Logs).
+  tags:
+  - Logs
+  - Log Aggregation
+  - Log Ingestion
+  - Log Search
+  - Log Pipeline
+  - Log Management
+  portal: https://apievangelist.com
+  github: https://github.com/api-evangelist
+  repo: logging
+services_tools:
+- name: Amazon CloudWatch
+  repo: https://github.com/api-evangelist/aws-cloudwatch
+  apisio: https://providers.apis.io/providers/aws-cloudwatch/
+- name: Axiom
+  repo: https://github.com/api-evangelist/axiom
+  apisio: https://providers.apis.io/providers/axiom/
+- name: Azure Log Analytics
+  repo: https://github.com/api-evangelist/azure-log-analytics
+  apisio: https://providers.apis.io/providers/azure-log-analytics/
+- name: Better Stack
+  repo: https://github.com/api-evangelist/betterstack
+  apisio: https://providers.apis.io/providers/betterstack/
+- name: Chronosphere
+  repo: https://github.com/api-evangelist/chronosphere
+  apisio: https://providers.apis.io/providers/chronosphere/
+- name: Coralogix
+  repo: https://github.com/api-evangelist/coralogix
+  apisio: https://providers.apis.io/providers/coralogix/
+- name: Cribl
+  repo: https://github.com/api-evangelist/cribl
+  apisio: https://providers.apis.io/providers/cribl/
+- name: Datadog
+  repo: https://github.com/api-evangelist/datadog
+  apisio: https://providers.apis.io/providers/datadog/
+- name: Dynatrace
+  repo: https://github.com/api-evangelist/dynatrace
+  apisio: https://providers.apis.io/providers/dynatrace/
+- name: Elastic Stack (ELK Stack)
+  repo: https://github.com/api-evangelist/elk-stack
+  apisio: https://providers.apis.io/providers/elk-stack/
+- name: Elasticsearch
+  repo: https://github.com/api-evangelist/elasticsearch
+  apisio: https://providers.apis.io/providers/elasticsearch/
+- name: Fluent Bit
+  repo: https://github.com/api-evangelist/fluent-bit
+  apisio: https://providers.apis.io/providers/fluent-bit/
+- name: Fluentd
+  repo: https://github.com/api-evangelist/fluentd
+  apisio: https://providers.apis.io/providers/fluentd/
+- name: Google Cloud Logging
+  repo: https://github.com/api-evangelist/google-cloud-logging
+  apisio: https://providers.apis.io/providers/google-cloud-logging/
+- name: Grafana
+  repo: https://github.com/api-evangelist/grafana
+  apisio: https://providers.apis.io/providers/grafana/
+- name: Graylog
+  repo: https://github.com/api-evangelist/graylog
+  apisio: https://providers.apis.io/providers/graylog/
+- name: Honeycomb
+  repo: https://github.com/api-evangelist/honeycomb
+  apisio: https://providers.apis.io/providers/honeycomb/
+- name: IBM QRadar
+  repo: https://github.com/api-evangelist/qradar
+  apisio: https://providers.apis.io/providers/qradar/
+- name: Logstash
+  repo: https://github.com/api-evangelist/logstash
+  apisio: https://providers.apis.io/providers/logstash/
+- name: Loki
+  repo: https://github.com/api-evangelist/loki
+  apisio: https://providers.apis.io/providers/loki/
+- name: New Relic
+  repo: https://github.com/api-evangelist/new-relic
+  apisio: https://providers.apis.io/providers/new-relic/
+- name: OpenObserve
+  repo: https://github.com/api-evangelist/openobserve
+  apisio: https://providers.apis.io/providers/openobserve/
+- name: OpenSearch
+  repo: https://github.com/api-evangelist/opensearch
+  apisio: https://providers.apis.io/providers/opensearch/
+- name: OpenTelemetry
+  repo: https://github.com/api-evangelist/opentelemetry
+  apisio: https://providers.apis.io/providers/opentelemetry/
+- name: SigNoz
+  repo: https://github.com/api-evangelist/signoz
+  apisio: https://providers.apis.io/providers/signoz/
+- name: SolarWinds
+  repo: https://github.com/api-evangelist/solarwinds
+  apisio: https://providers.apis.io/providers/solarwinds/
+- name: Splunk
+  repo: https://github.com/api-evangelist/splunk
+  apisio: https://providers.apis.io/providers/splunk/
+- name: Sumo Logic
+  repo: https://github.com/api-evangelist/sumo-logic
+  apisio: https://providers.apis.io/providers/sumo-logic/
+- name: Vector
+  repo: https://github.com/api-evangelist/vector
+  apisio: https://providers.apis.io/providers/vector/
+features:
+- name: Log Ingestion and Collection
+  description: Logging platforms collect log events from applications, hosts, containers,
+    cloud services, and network devices via HTTP endpoints, syslog, agents, and shippers
+    such as Fluent Bit, Vector, and OpenTelemetry collectors.
+- name: Parsing and Enrichment
+  description: Incoming log lines are parsed into structured fields, enriched with
+    metadata (host, service, environment, trace ID), and normalized so downstream
+    search and analytics behave consistently across sources.
+- name: Indexing and Full-Text Search
+  description: Platforms like Elasticsearch, OpenSearch, Splunk, Graylog, and OpenObserve
+    index log content for fast keyword, field, and time-range queries against very
+    large data sets.
+- name: Log Routing and Pipelines
+  description: Log pipeline tools like Cribl, Vector, Fluentd, Fluent Bit, and Logstash
+    route, transform, filter, sample, and replicate log streams between sources, destinations,
+    and storage tiers.
+- name: Retention, Tiering, and Archival
+  description: Logging services manage hot, warm, and cold retention policies, archive
+    raw logs to object storage, and enforce retention windows for cost control and
+    compliance.
+- name: Alerting and Detection on Logs
+  description: Log platforms expose alert rules, saved searches, and detection content
+    that fire on patterns, thresholds, anomalies, or security signatures observed
+    in log streams.
+- name: Live Tail and Troubleshooting
+  description: Engineers stream live logs, filter by service or request, and pivot
+    from a log line into traces, metrics, and related events during incident response
+    and debugging.
+- name: Log-Based Audit and Compliance
+  description: Immutable log capture, retention policies, and access controls support
+    SOC 2, HIPAA, PCI, and other audit and compliance use cases driven by log evidence.
+use_cases:
+- name: Application Troubleshooting and Debugging
+  description: Engineers search application and request logs across services to diagnose
+    errors, latency spikes, and failed deployments in production environments.
+- name: Centralized Log Aggregation Across Clouds
+  description: Organizations aggregate logs from AWS CloudWatch, Google Cloud Logging,
+    Azure Log Analytics, Kubernetes clusters, and on-prem systems into a single search
+    and analytics surface.
+- name: Security and SIEM Use Cases
+  description: Security teams ingest authentication, network, endpoint, and audit
+    logs into platforms like Splunk, Sumo Logic, Graylog, and QRadar to drive detections,
+    investigations, and threat hunting.
+- name: Cost Control Through Log Pipelines
+  description: Teams use Cribl, Vector, and Fluent Bit to reduce, sample, route, and
+    reshape log volume before it lands in expensive indexing tiers, optimizing cost
+    per useful log.
+- name: Compliance and Audit Trail Retention
+  description: Regulated organizations retain structured logs for prescribed windows,
+    with tamper-evident storage and access controls, to demonstrate compliance during
+    audits.
+- name: OpenTelemetry-Native Logging
+  description: Modern stacks emit logs from applications as OpenTelemetry log records,
+    correlate them with traces and metrics, and ship them through OTLP into back-ends
+    like Axiom, OpenObserve, and SigNoz.
+- name: Kubernetes and Container Log Collection
+  description: Cluster operators run Fluent Bit, Fluentd, or Vector as DaemonSets
+    to collect container logs and forward them into Loki, Elasticsearch, OpenSearch,
+    or hosted log services.
+- name: Business and Product Analytics on Logs
+  description: Product and platform teams query structured event logs to build dashboards,
+    funnels, and KPIs without standing up a separate analytics pipeline.
+integrations:
+- name: Splunk
+  description: Enterprise log search, indexing, and SIEM platform widely used for
+    IT operations and security operations on high-volume log data.
+- name: Datadog Logs
+  description: Hosted log management integrated with Datadog metrics and APM, with
+    log-to-metric pipelines, archives, and detection rules.
+- name: Elasticsearch / OpenSearch
+  description: Open-source distributed search engines that power many log stacks,
+    including ELK and the OpenSearch project, for indexing and querying logs at scale.
+- name: Grafana Loki
+  description: Horizontally scalable, label-based log aggregation system designed
+    to pair with Prometheus metrics and Grafana dashboards.
+- name: OpenTelemetry Logs
+  description: Open standard for emitting and transporting log records over OTLP,
+    with collector pipelines that fan out to many logging back-ends.
+- name: Fluent Bit and Fluentd
+  description: Lightweight and feature-rich open-source log shippers used across Kubernetes,
+    edge, and server fleets to collect and forward logs.
+- name: Vector
+  description: High-performance open-source observability data pipeline that collects,
+    transforms, and routes logs, metrics, and traces.
+- name: Cribl Stream
+  description: Vendor-neutral observability pipeline that reduces, shapes, routes,
+    and replays log and event data between sources and destinations.

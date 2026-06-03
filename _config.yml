@@ -1,0 +1,25 @@
+title: Logging
+description: An index and topic collection covering log ingestion, log search, log
+  aggregation, and log pipeline services. Logging platforms collect event records
+  from applications, infrastructure, containers, network devices, and security tooling,
+  then parse, index, route, and retain them for search, alerting, troubleshooting,
+  audit, and analytics. This collection spans hosted SaaS log platforms (Splunk, Sumo
+  Logic, Datadog Logs, Coralogix, Axiom, Logz.io, Better Stack Logs), open-source
+  log stacks (Elasticsearch / OpenSearch, Loki, Graylog, OpenObserve, SigNoz), log
+  pipeline and shipper tooling (Fluentd, Fluent Bit, Logstash, Vector, Cribl), and
+  cloud-native log services (AWS CloudWatch Logs, Google Cloud Logging, Azure Log
+  Analytics, OpenTelemetry Logs).
+url: https://logging.apievangelist.com
+collections:
+  api_stories:
+    output: false
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- Dockerfile
+- examples
+- json-ld
+- json-schema
+- json-structure
+- vocabulary
