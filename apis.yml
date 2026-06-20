@@ -6,7 +6,7 @@ description: >-
   Logs), open-source log stacks (Elasticsearch / OpenSearch, Loki, Graylog, OpenObserve, SigNoz), log pipeline and shipper tooling (Fluentd, Fluent Bit, Logstash, Vector, Cribl), and cloud-native log services (AWS CloudWatch Logs,
   Google Cloud Logging, Azure Log Analytics, OpenTelemetry Logs).
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Logs
 - Log Aggregation
