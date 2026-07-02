@@ -3,8 +3,6 @@ An index and topic collection covering log ingestion, log search, log aggregatio
 
 **URL:** [https://apievangelist.com](https://apievangelist.com)
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
-
 ## Tags:
 
  - Logs, Log Aggregation, Log Ingestion, Log Search, Log Pipeline, Log Management
