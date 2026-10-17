@@ -1,8 +1,8 @@
 ---
-title: How the APIs.io Search Works
-link: http://apievangelist.com/2023/12/05/how-the-api-search-works/
-published: '2023-12-05'
+title: What People Searched for on APIs.io Today
+link: https://apis.io/2026/06/22/what-people-searched-for-on-apis-io/
+published: '2026-06-22'
 provider: apis-io
 repo: https://github.com/api-evangelist/apis-io
-domain: apievangelist.com
+domain: apis.io
 ---
